@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>チャットボット</title>
+</head>
+<body>
+    <div id="messages"></div>
+
+
+    <form>
+        <label for="name">名前：</label>
+        <input type="text" id="name" name="name" placeholder="名前を入力してください">
+        <br><br>
+        <button onclick="sendMessage()">送信</button>
+    </form> 
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
